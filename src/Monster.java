@@ -33,6 +33,7 @@ public abstract class Monster implements Creature {
     public Monster(String name, int hp, char suffix) {
         this.name = name;
         this.hp = hp;
+        this.suffix = suffix;
     }
     public boolean isAlive() {
         if (this.hp <= 0) {
@@ -42,6 +43,6 @@ public abstract class Monster implements Creature {
         }
     }
     public void showStatus(){
-        System.out.println("name:HP[hp]");
+        System.out.println(getName()+":"+getHp());
     }
 }

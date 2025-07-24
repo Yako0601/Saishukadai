@@ -16,7 +16,8 @@ public class Wizard extends Character {
 
     public void attack(Creature target){
         mp = mp-1;
-        System.out.println(getName()+"は火の玉をとなえた！[target.name]に3のダメージを与えた！");
+        System.out.println(getName()+"は火の玉をとなえた!"+target.getName()+"に3のダメージを与えた！");
+        target.setHp(target.getHp()-3);
     }
 
 }
