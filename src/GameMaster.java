@@ -11,6 +11,13 @@ public class GameMaster {
         monsters.add(new Goblin('A',50));
         monsters.add(new Matango('B',45));
         monsters.add(new Slime('A',40));
+
+        for(Character c:party) {
+            System.out.println(c.getName());
+        }
+        for(Monster m:monsters) {
+            System.out.println(m.getName()+m.getSuffix());
+        }
     }
 
 

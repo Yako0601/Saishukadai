@@ -4,7 +4,7 @@ public class Matango extends Monster{
         super("おばけきのこ",hp,suffix);
     }
 
-    public void attack(){
-        System.out.println("[name][suffix]は体当たり攻撃！[target.name]に6のダメージを与えた！");
+    public void attack(Creature target){
+        System.out.println(getName()+getSuffix()+"は体当たり攻撃！[target.name]に6のダメージを与えた！");
     }
 }

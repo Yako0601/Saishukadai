@@ -1,5 +1,13 @@
 public class Wizard extends Character {
-    int mp;
+    public int getMp() {
+        return mp;
+    }
+
+    public void setMp(int mp) {
+        this.mp = mp;
+    }
+
+    private int mp;
 
     public Wizard(String name, int hp, int mp) {
         super(name, hp);
@@ -8,7 +16,7 @@ public class Wizard extends Character {
 
     public void attack(Creature target){
         mp = mp-1;
-        System.out.println("[name]は火の玉をとなえた！[target.name]に3のダメージを与えた！");
+        System.out.println(getName()+"は火の玉をとなえた！[target.name]に3のダメージを与えた！");
     }
 
 }
