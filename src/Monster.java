@@ -15,7 +15,11 @@ public abstract class Monster implements Creature {
 
     @Override
     public void setHp(int hp) {
-        this.hp = hp;
+        if(hp>=0){
+            this.hp = hp;
+        }else{
+            this.hp = 0;
+        }
     }
 
     public char getSuffix() {
@@ -36,7 +40,7 @@ public abstract class Monster implements Creature {
         this.suffix = suffix;
     }
     public boolean isAlive() {
-        if (this.hp >= 0) {
+        if (this.hp > 0) {
             return true;
         }else{
             return false;

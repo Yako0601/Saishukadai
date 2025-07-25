@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public abstract  class Character implements Creature{
     @Override
     public String getName() {
