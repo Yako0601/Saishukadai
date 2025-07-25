@@ -11,7 +11,7 @@ public class Wizard extends Character {
 
     public Wizard(String name, int hp, int mp) {
         super(name, hp);
-        this.mp = mp;
+        this.mp = 30;
     }
 
     public void attack(Creature target){

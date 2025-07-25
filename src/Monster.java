@@ -36,13 +36,13 @@ public abstract class Monster implements Creature {
         this.suffix = suffix;
     }
     public boolean isAlive() {
-        if (this.hp <= 0) {
+        if (this.hp >= 0) {
             return true;
         }else{
             return false;
         }
     }
     public void showStatus(){
-        System.out.println(getName()+":"+getHp());
+        System.out.println(getName()+":HP"+getHp());
     }
 }

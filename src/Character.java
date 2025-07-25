@@ -33,7 +33,7 @@ public abstract  class Character implements Creature{
         this.hp = hp;
     }
     public void showStatus(){
-        System.out.println(getName()+":"+getHp());
+        System.out.println(getName()+":HP"+getHp());
 
     }
 }
